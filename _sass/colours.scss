@@ -2,14 +2,14 @@
 	Colors
 --*/
 :root {
-  --background0-light: rgb(254, 254, 253);
+  --background0-light: #f7f4fb; /* background */
   --background1-light: rgb(255, 255, 255); /* unused */
   --background2-light: #F9F7F4; /* blockquote and card */
   --background3-light: var(--background2-light); /* navbar */
-  --text1-light: rgba(0,0,0,0.8); /* body text */
-  --text2-light: rgba(0,0,0,0.6); /* subtitles */
+  --text1-light: #0A1F0E; /* body text */
+  --text2-light: #0F2E15; /* subtitles */
   --text3-light: #0dcbd1; /* contrast headings */
-  --text4-light: #5f9b65; /* links */
+  --text4-light: #EE7B30; /* links */
   --hover1-light: rgb(0,0,0,0.8);
   --hover2-light: var(--hover1-light);
   --hover4-light: var(--text1);
