@@ -1,0 +1,1 @@
+!function(){"use strict";var e;e=function(){let e="light";return localStorage.getItem("er-color-scheme")&&(e=localStorage.getItem("er-color-scheme")),e}(),document.querySelector(":root").setAttribute("color-scheme",e),localStorage.setItem("er-color-scheme",e),document.addEventListener("DOMContentLoaded",(function(){}),!1)}();
