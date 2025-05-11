@@ -1,0 +1,51 @@
+exclude:
+  - "vendor/bundle/"
+  - "node_modules/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+  - "assets/*/README.md"
+
+include:
+  - _pages
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+collections:
+  project_items:
+    output: false
+  family_support:
+    output: true
+  evidence:
+    output: true
+
+sass:
+  load_paths:
+  - _sass
+  style: compressed
+
+# Site settings
+url: "https://franceslester.com" # the base hostname & protocol for your site
+baseurl: ""
+repository: TODO
+permalink: /:title/
+
+# User information
+title: Fran Lester
+name: "Frances (Fran) Lester"
+avatar_path: "/assets/img/site/headshot.jpg"
+job_title: "Family Worker<br/>Therapist<br/>Social Worker"
+location: "London, UK"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

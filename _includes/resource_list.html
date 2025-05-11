@@ -1,0 +1,47 @@
+<!-- 
+  Resource List Include
+  Parameters:
+  - collection: The collection to display (e.g. site.evidence, site.family_support)
+  - sort_by: Field to sort by (e.g. 'title', 'path')
+  - sort_order: Sort order ('asc' or 'desc') - default is ascending
+-->
+
+<div id="post-list">
+  {%- if include.sort_order == 'desc' -%}
+    {%- assign posts = include.collection | sort: include.sort_by | reverse -%}
+  {%- else -%}
+    {%- assign posts = include.collection | sort: include.sort_by -%}
+  {%- endif -%}
+  
+  {%- for post in posts %}
+  <div class="post-area">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="post-info-container">
+          <h3 class="card-title">
+            <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+          </h3>
+          {%- if post.authors -%}
+          <p class="paper-authors">
+            {{ post.authors }}
+          </p>
+          {%- endif -%}
+
+          <p class="post-excerpt">
+            {{ post.content | strip_html }}
+          </p>
+
+          {%- if post.additional_links -%}
+          <p>
+            Additional Resources: &nbsp;
+            {%- for link in post.additional_links -%}
+            <a href="{{ link.url }}" class="">{{ link.name }}</a>{% if forloop.last %}{% else %} | {% endif %}
+            {%- endfor -%}
+          </p>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor -%}
+</div> 

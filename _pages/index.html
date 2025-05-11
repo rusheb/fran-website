@@ -1,0 +1,19 @@
+---
+title: Home
+layout: sidebar
+order: 1
+permalink: /
+redirect_from:
+  - /about/
+---
+
+<div class="block">
+  <article class="page-content">
+
+    <!-- include the about.md and process to html -->
+    <div id="about-section">
+      {% capture about %}{% include about.md %}{% endcapture %}
+      {{ about | markdownify }}
+    </div>
+  </article>
+</div>

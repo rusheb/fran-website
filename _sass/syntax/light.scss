@@ -1,0 +1,49 @@
+
+[color-scheme="light"]{
+  
+  pre.highlight{
+    background: #FAF8F5;
+    color:rgb(100, 100, 100); 
+  }
+
+  /* Keyword */
+  .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
+      color: hsl(200, 100%, 45%);
+  }
+
+  /* Number */
+  .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
+      color: hsl(20, 70%, 55%);
+  }
+
+  /* String */
+  .highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+      color: hsl(40, 70%, 45%);
+  }
+
+  /* String escape */
+  .highlight .se {
+      color: hsl(45, 80%, 55%);
+  }
+
+  /* Comment */
+  .highlight .c, .highlight .ch, .highlight .cm, .highlight .cp, .highlight .cpf, .highlight .c1, .highlight .cs, .highlight .gu {
+      color: #aaa9a7; /* Replaced mix with hex color */
+  }
+
+  /* Preprocessor, Annotation */
+  .highlight .a, .highlight .cp {
+      color: hsl(270, 50%, 60%);
+  }
+
+  /* Identifier */
+  .highlight .i, .highlight .na, .highlight .nb, .highlight .nc, .highlight .no, .highlight .nd, .highlight .ni, .highlight .ne, .highlight .nf, .highlight .nl, .highlight .nn, .highlight .nx, .highlight .py, .highlight .nt, .highlight .nv, .highlight .ow, .highlight .w, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .vm {
+      color: hsl(200, 70%, 35%);
+  }
+
+  /* Type name */
+  .highlight .t, .highlight .nc {
+      color: hsl(185, 100%, 35%);
+  }
+
+}
