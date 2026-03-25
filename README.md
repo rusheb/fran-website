@@ -1,3 +1,5 @@
+## Development
+
 Requires Ruby 3.4.0 (via `rbenv`) and Bundler 2.6.8:
 ```
 brew install rbenv
@@ -21,3 +23,9 @@ Full build
 ```
 make build
 ```
+
+### How to publish
+
+The site is **built and deployed by GitHub Actions** on each push to **`main`**.
+
+You don't need to build locally before push.
